@@ -8,11 +8,10 @@
 </head>
 <body>
     <?php include('header.php'); ?>
-    
     <main class="container my-5">
         <div class="text-center">
             <h2>فرم ورود</h2>
-            <form action="login.php" method="post">
+            <form action="login_action.php" method="post">
                 <table class="table table-bordered table-striped mx-auto" style="max-width: 400px;">
                     <tr>
                         <td>نام کاربری:</td>
@@ -29,30 +28,9 @@
                     </tr>
                 </table>
             </form>
-
-            <?php
-            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                $username = $_POST['username'];
-                $password = $_POST['password'];
-
-                // نمایش مشخصات وارد شده به کاربر
-                echo "<h3>مشخصات وارد شده:</h3>";
-                echo "<p>نام کاربری: $username</p>";
-                echo "<p>کلمه عبور: $password</p>";
-
-                // در اینجا می‌توانید بررسی کنید که اطلاعات درست است یا نه.
-                if ($username == "mmd86" && $password == "me1386") {
-                    echo "<p>خوش آمدید، $username!</p>";
-                } else {
-                    echo "<p>نام کاربری یا کلمه عبور اشتباه است.</p>";
-                }
-            }
-            ?>
         </div>
     </main>
-    
     <?php include('footer.php'); ?>
-    
     <script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
