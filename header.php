@@ -10,7 +10,7 @@ session_start();
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.php">صفحه اصلی</a></li>
+                <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="register.php">ثبت‌ نام</a></li>
                 <?php
                 if(isset($_SESSION["login"]) && $_SESSION["login"]==true){
@@ -26,6 +26,7 @@ session_start();
                 ?>
                 <li class="nav-item"><a class="nav-link" href="about.php">درباره ما</a></li>
                 <li class="nav-item"><a class="nav-link" href="product.php">محصولات</a></li>
+                <li class="nav-item"><a class="nav-link" href="admin.php">مدیریت</a></li>
             </ul>
         </div>
     </nav>

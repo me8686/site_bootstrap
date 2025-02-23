@@ -11,7 +11,7 @@ $row = mysqli_fetch_array($find);
 if ($row) {
     $_SESSION["login"] = true;
     $_SESSION["username"] = $row["username"];
-    header("Location: index.php");
+    header("Location: home.php");
     exit();
 } else {
     echo '<p class="text-bg-danger p-3">ایمیل یا کلمه عبور صحیح نیست</p>';

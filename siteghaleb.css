@@ -9,6 +9,7 @@ header {
 
 footer {
     background-color: #17a2b8;
+    
 }
 
 footer a {
@@ -82,4 +83,18 @@ main section p {
 #ab
 {
     text-align: center;
+    color: aqua;
 }
+#s
+{
+    color: rgb(152, 238, 240);
+    text-align: center;
+}
+
+#cw
+{
+    text-align: right;
+    color: black;
+}
+
+

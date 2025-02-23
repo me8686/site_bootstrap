@@ -11,7 +11,7 @@
     
     <main class="container my-5">
         <div class="text-center">
-            <h2>فرم ثبت‌نام</h2>
+            <h2 id="s">فرم ثبت‌نام</h2>
             <form action="register_action.php" method="post">
                 <table class="table table-bordered table-striped mx-auto" style="max-width: 500px;">
                     <tr>
